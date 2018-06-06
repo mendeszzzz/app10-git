@@ -1,0 +1,778 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->	
+<meta charset="utf-8">
+<title>Proyecto Final</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temaapp10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+
+<script src="phonegap.js"></script><!-- necesario*/ -->
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head> 
+
+<body onLoad="MM_preloadImages('imagenes/imagen16.jpg','imagenes/imagen2.jpg','imagenes/imagen20.jpg','imagenes/imagen22.jpg','imagenes/javascript-1024x683.png','imagenes/1_OF0xEMkWBv-69zvmNs6RDQ.gif','imagenes/imagen29.jpg')"> 
+ <style type="text/css"> p { text-align: justify; }</style>
+<div data-role="page" id="principal1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" >
+   <h1>Primer Parcial</h1> 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Web y Funcionamiento de Internet</h2> 
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>HTML</h2>
+       <p>Elementos Básicos</p>  
+      </a>      
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>HTML5</h2>
+       <p>Elementos de Bloque-Elementos de Formulario-Elementos Semánticos</p>  
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CSS</h2> 
+       <p>Reglas de Estilo-Estilos en línea, Interno, Externo-Id y Clases
+       </p>
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Dreamweaver CS6</h2>
+      </a>      
+     </li>      
+    </ul>
+  </div>
+    <h3>Segundo Parcial</h3> 
+  <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CSS</h2>
+       <p>Ajuste relativo a dispositivos (%, em)</p> 
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>WAMP</h2>     
+      </a>      
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>JS</h2>
+       <p>Variables-Funciones-Jquery</p>  
+      </a>      
+     </li>      
+    </ul>
+  </div>
+<h3>Tercer Parcial</h3> 
+ <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>PHP</h2>
+       <p>Introducción</p> 
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>MySQL</h2>
+         <p>Introducción</p>
+      </a>      
+     </li>  
+		 <li class="ui-first-child ui-last-child">
+      <a href="#Pagina12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>---Datos del Desarrollador---</h2>
+      </a>      
+     </li>    
+    </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h5>Catarino Andrés Méndez Martínez</h5>
+   <h4>Proyecto Final</h4></div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Web y Funcionamiento de Internet</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>¿Qué és el internet?</h2>
+    <p>Internet es una red de computadoras que se encuentran interconectadas a nivel mundial para compartir información. Se trata de una red de equipos de cálculo que se relacionan entre sí a través de la utilización de un lenguaje universal.
+
+El concepto Internet tiene sus raíces en el idioma inglés y se encuentra conformado por el vocablo inter (que significa entre) y net  (proveniente de network que quiere decir red electrónica). Es un término que siempre debe ser escrito en mayúscula ya que, hace referencia a “La Red” (que conecta a las computadoras mundialmente mediante el protocolo TCP/IP) y sin un artículo que lo acompañe (el/la) para hacerle referencia.
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="http://concepto.de/internet" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>
+      
+   </ul>
+ </div>
+</div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','imagenes/imagen2.jpg',1)"><img src="imagenes/imagen1.jpg" alt="" width="60%" height="60%" id="Image29"></a>
+</p>
+        
+ </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+	
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>CSS</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Ajustes relativos a dispositivos</h2>
+    <p>Como habrás podido observar al poner en marcha estos ejemplos, los textos no se ajustan siempre de manera predeterminada a las formas que estmos creando con CSS3, es decir, muchas veces el texto se sale de la caja, porque no sigue la forma circular que le estamos aplicando al redondear la esquina. En resumen, al texto, que la esquina esté redondeada le da exactamente igual.
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://desarrolloweb.com/articulos" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>
+      
+   </ul>
+ </div>
+</div>
+    </p>
+ <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Aproximación 1: Usar overflow</h1>
+    <div>
+     <p>La opción más sencilla, pero más "ruda" es simplemente hacer que lo que sobrepasa del espacio redondeado no se vea. Esto se consigue ocultando las partes del contenido que se salen de la forma con el atributo overflow: hidden.</p>
+      <img src="imagenes/imagen17.jpg" width="80%" height="80%" >
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://rolandocaldas.com/php" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>   
+   </ul>
+ </div>
+</div>
+     <br> 
+	   </div>
+   </div>
+  </div>  
+	   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Aproximación 2: usar padding</h1>
+    <div>
+     <p>La segunda aproximación sería usar el padding. Simplemente le colocamos un padding de dimensión suficiente para que el texto no se acerque demasiado hacia el borde del elemento.</p>
+      <img src="imagenes/imagen18.jpg" width="80%" height="80%" >
+		<p>l problema de esta segunda técnica es que el texto no se adapta a la forma, sino que sigue siendo dispuesto en "cuadrado". Por lo menos no se pierde información, pero no conseguimos que el texto se adapte al contenedor, aprovechando su espacio y generando la misma forma circular que tiene la caja.</p>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://rolandocaldas.com/php" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>   
+   </ul>
+ </div>
+</div>
+     <br> 
+	   </div>
+   </div>
+  </div> 
+	  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Unidades de Medidas</h1>
+    <div>
+     <p>Para la definición del tamaño de una fuente escalable disponemos de diversas unidades de medida estándar en CSS 3, que por conveniencia podemos dividir en:
+
+Unidades absolutas: Consisten en unidades de medida físicas y tienen una relación fija y bien definida unas relativas a otras. Son unidades no escalables, a excepción del porcentaje, que estrictamente hablando no sería una unidad absoluta estándar, aunque así es generalmente considerada.
+Unidades relativas: Especifican un tamaño relativo a otra longitud externa. Las unidades relativas son fácilmente escalables.</p>
+     
+		<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/imagen20.jpg',1)"><img src="imagenes/imagen19.jpg" alt="" width="80%" height="80%" id="Image35"></a><br> 
+	   </div>
+   </div>
+  </div> 
+ </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Dreamweaver CS6</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>¿Qué es Dreamweaver CS6?</h2>
+    <p>Adobe Dreamweaver es una aplicación en programa de estudio (basada en la forma de estudio de Adobe Flash) que está destinada a la construcción, diseño y edición de sitios, vídeos y aplicaciones Web basados en estándares. Creado inicialmente por Macromedia (actualmente producido por Adobe Systems) es uno de los programas más utilizados en el sector del diseño y la programación web por sus funcionalidades, su integración con otras herramientas como Adobe Flash y, recientemente, por su soporte de los estándares del World Wide Web Consortium.
+    </p>
+	   
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/imagen16.jpg',1)"><img src="imagenes/imagen15.png" alt="" width="340" height="340" id="Image15"></a> </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>HTML</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Elementos Básicos</h2>
+    <p >HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto.
+      EL HTML se encarga de desarrollar una descripción sobre los contenidos que aparecen como textos y sobre su estructura, complementando dicho texto con diversos objetos (como fotografías, animaciones, etc).
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://definicion.de/html" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>
+      
+   </ul>
+ </div>
+</div>
+    </p>
+ </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>HTML5</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Elementos de Bloque-Elementos de Formulario-Elementos Semánticos</h2>
+    <p>HTML5 es un lenguaje markup (de hecho, las siglas de HTML significan Hyper Text Markup Language) usado para estructurar y presentar el contenido para la web. Es uno de los aspectos fundamentales para el funcionamiento de los sitios, pero no es el primero. Es de hecho la quinta revisión del estándar que fue creado en 1990. A fines del año pasado, la W3C la recomendó para transformarse en el estándar a ser usado en el desarrollo de proyectos venideros. Por así decirlo, qué es HTML5 está relacionado también con la entrada en decadencia del viejo estándar HTML 4, que se combinaba con otros lenguajes para producir los sitios que podemos ver hoy en día. Con HTML5, tenemos otras posibilidades para explotar usando menos recursos. Con HTML5, también entra en desuso el formato XHTML, dado que ya no sería necesaria su implementación.
+    </p>
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/imagen3.jpg" alt="imagen3" title="imagen3" id="wows1_0"/></li>
+		<li><img src="data1/images/imagen4.jpg" alt="imagen4" title="imagen4" id="wows1_1"/></li>
+		<li><img src="data1/images/imagen5.jpg" alt="imagen5" title="imagen5" id="wows1_2"/></li>
+		<li><img src="data1/images/imagen6.jpg" alt="imagen6" title="imagen6" id="wows1_3"/></li>
+		<li><img src="data1/images/imagen7.jpg" alt="imagen7" title="imagen7" id="wows1_4"/></li>
+		<li><img src="data1/images/imagen8.jpg" alt="imagen8" title="imagen8" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/imagen9.jpg" alt="http://wowslider.com/" title="imagen9" id="wows1_6"/></a></li>
+		<li><img src="data1/images/imagen10.jpg" alt="imagen10" title="imagen10" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="imagen3"><span><img src="data1/tooltips/imagen3.jpg" alt="imagen3"/>1</span></a>
+		<a href="#" title="imagen4"><span><img src="data1/tooltips/imagen4.jpg" alt="imagen4"/>2</span></a>
+		<a href="#" title="imagen5"><span><img src="data1/tooltips/imagen5.jpg" alt="imagen5"/>3</span></a>
+		<a href="#" title="imagen6"><span><img src="data1/tooltips/imagen6.jpg" alt="imagen6"/>4</span></a>
+		<a href="#" title="imagen7"><span><img src="data1/tooltips/imagen7.jpg" alt="imagen7"/>5</span></a>
+		<a href="#" title="imagen8"><span><img src="data1/tooltips/imagen8.jpg" alt="imagen8"/>6</span></a>
+		<a href="#" title="imagen9"><span><img src="data1/tooltips/imagen9.jpg" alt="imagen9"/>7</span></a>
+		<a href="#" title="imagen10"><span><img src="data1/tooltips/imagen10.jpg" alt="imagen10"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->   
+ </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>CSS</h1> 
+  </div>
+<div data-role="content" align="center">
+   <h2>Reglas de Estilo</h2>
+   <div>
+    <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Reglas de Estilo</h1>
+    <div>
+     <p>Nuestro código CSS3 no es más que una serie de reglas incluidas en un fichero. La mejor forma de entender una regla es con un ejemplo:</p>
+<img src="imagenes/imagen11.jpg" width="60%" height="60%" >
+<p>Como puedes observar, una regla se compone de un selector y una declaración que está encerrada entre {} de forma que con la declaración decimos qué tiene que hacerse y es el selector  el encargado de indicar a qué elemento de nuestro HTML se le debe aplicar la declaración.
+
+La declaración es un conjunto de líneas separadas por ; (punto y coma) y cada línea (aunque pueden estar todas seguidas) se compone de una propiedad y un valor de forma que especificamos qué modificación visual queremos realizar (propiedad) y en qué medida (valor)...
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://rolandocaldas.com/php" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>
+      
+   </ul>
+ </div>
+</div>
+</p>
+     <br> 
+    </div>
+    <div>
+     </div>
+   </div>
+  </div>
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Estilos en línea</h1>
+    <div>
+     <p>Se Agrega de la siguiente manera;</p>
+      <img src="imagenes/imagen12.jpg" width="60%" height="60%" >
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://rolandocaldas.com/php" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>   
+   </ul>
+ </div>
+</div>
+     <br> 
+	   </div>
+   </div>
+  </div>
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Estilos en Interno</h1>
+    <div>
+     <p> Este se agrega dentro del mismo archivo "Index" y se agrega de la siguiente manera:</p>
+     
+     <img src="imagenes/imagen13.jpg" width="60%" height="60%" >
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://rolandocaldas.com/php" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li> 
+   </ul>
+ </div>
+</div>
+     <br> 
+    </div>
+    <div>
+     </div>
+   </div>
+  </div>
+<div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Estilos  Externo </h1>
+    <div>
+     <p>Este se Agrega fuera del archivo "index" y es llamado desde el mismo:</p>
+
+<img src="imagenes/imagen14.jpg" width="60%" height="60%" >
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://listas.20minutos.es/lista" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>  
+   </ul>
+ </div>
+</div>
+    </div>
+   </div>
+  </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+ </div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>WAMP</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>¿Qué es WAMP?</h2>
+    <p>Un servidor WAMP es un PC con Windows que dispone de un servidor Apache, un gestor de bases de datos MySQL y el lenguaje de programación PHP. Las siglas WAMP son un acrónimo de Windows + Apache + MySQL + PHP. Al igual que WAMP, también existen los servidores LAMP que son lo mismo pero en un sistema Linux.
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="http://recursostic.educacion.es/observatorio/" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>
+      
+   </ul>
+ </div>
+</div>
+    </p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/imagen22.jpg',1)"><img src="imagenes/imagen21.png" alt="" width="600" height="200" id="Image36"></a> </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>JS</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Variables-Funciones-Jquery</h2>
+    <p>Java es un lenguaje de programación de propósito general, concurrente, orientado a objetos, que fue diseñado específicamente para tener tan pocas dependencias de implementación como fuera posible. Su intención es permitir que los desarrolladores de aplicaciones escriban el programa una vez y lo ejecuten en cualquier dispositivo
+ </p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/1_OF0xEMkWBv-69zvmNs6RDQ.gif',1)"><img src="imagenes/javascript codebehind.gif" width="60%" height="60%" id="Image37"></a>
+      
+     <p>
+     JavaScript se diseñó con una sintaxis similar a C, aunque adopta nombres y convenciones del lenguaje de programación Java. Sin embargo, Java y JavaScript tienen semánticas y propósitos diferentes.
+     </p>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://developer.mozilla.org/es" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>
+      
+   </ul>
+ </div>
+</div>
+<div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Variables</h1>
+    <div>
+     <p>Las variables Java son un espacio de memoria en el que guardamos un determinado valor (o dato). Para definir una variable seguiremos la estructura:</p>
+      <img src="imagenes/imagen23.jpg" width="80%" height="80%" >
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="http://www.manualweb.net/java" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>   
+   </ul>
+ </div>
+</div>
+     <br> 
+     <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Tipos de Variables</h1>
+    <div>
+     <p>Dentro de Java podemos encontrar los siguientes tipos de variables:
+		</p>
+<h2>Variables de instancia (campos no estáticos)</h2>
+<p>son las variables que están definidas dentro de un objeto pero que no tienen un modificador de estáticas (static). Suelen llevar un modificador de visibilidad (public, private, protected) definiéndose.:</p>
+      <img src="imagenes/imagen24.jpg" width="80%" height="100%" >
+<h2>Variables de clase (campos estáticos)</h2>
+<p>son aquellas variables que están precedidas del modificador static. Esto indica que solo hay una instancia de dicha variable. Es decir, aunque tengamos N objetos de la clase, la variable estática solo se instancia una vez.</p>
+      <img src="imagenes/imagen25.jpg" width="80%" height="100%" >
+<h2>Variables locales</h2>
+<p>son variables temporales cuyo ámbito de visibilidad es el método sobre el que están definidas. No pueden ser accedidas desde otra parte del código. Se las distingue de las variables de instancia ya que estas no llevan modificadores de visibilidad delante.</p>
+      <img src="imagenes/imagen26.jpg" width="80%" height="100%" >
+      <h2>Parámetros</h2>
+<p> son las variables recibidas como parámetros de los métodos. Su visibilidad será el código que contenga dicho método.</p>
+      <img src="imagenes/imagen27.jpg" width="80%" height="100%" >
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="http://www.manualweb.net/java" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>   
+   </ul>
+ </div>
+</div>
+     <br> 
+     </div>
+   </div>
+  </div>
+     </div>
+   </div>
+  </div>
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Funciones</h1>
+    <div>
+     <p>Las funciones son un conjunto de líneas de código (instrucciones), encapsulados en un bloque, usualmente reciben parámetros, cuyos valores utilizan para efectuar operaciones y adicionalmente retornan un valor. En otras palabras una función puede recibir parámetros o argumentos (algunas no reciben nada), hace uso de dichos valores recibidos como sea necesario y retorna un valor usando la instrucción return, si no retorna algo, entonces no es una función. En java las funciones usan el modificador static.</p>
+      <img src="imagenes/imagen17.jpg" width="80%" height="80%" >
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://rolandocaldas.com/php" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>   
+   </ul>
+ </div>
+</div>
+     <br> 
+     </div>
+   </div>
+  </div>
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Jquery</h1>
+    <div>
+     <p>jquery es una librería javascript que se esta utilizando mucho,
+una de las caracteristicas de esta librería es su version bien
+comprimida y comparte muchas de características de prototype
+(una de las diferencias son la llamada de metodos)..</p>
+      
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://rolandocaldas.com/php" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>   
+   </ul>
+ </div>
+</div>
+     <br> 
+     </div>
+   </div>
+  </div>     
+ </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+	  <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>PHP</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Introducción</h2>
+    <p>PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML.</p>
+    <p>Lo mejor de utilizar PHP es su extrema simplicidad para el principiante, pero a su vez ofrece muchas características avanzadas para los programadores profesionales. No sienta miedo de leer la larga lista de características de PHP. En unas pocas horas podrá empezar a escribir sus primeros scripts.</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','imagenes/imagen29.jpg',1)"><img src="imagenes/fadeW.gif" alt="" width="60%" height="60%" id="Image44"></a>
+    
+     <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Variables</h1>
+    <div>
+     <p>PHP admite el concepto de funciones variables. Esto significa que si un nombre de variable tiene paréntesis anexos a él, PHP buscará una función con el mismo nombre que lo evaluado por la variable, e intentará ejecutarla. Entre otras cosas, esto se puede usar para implementar llamadas de retorno, tablas de funciones, y así sucesivamente.
+
+Las funciones variables no funcionarán con constructores de lenguaje como echo, print, unset(), isset(), empty(), include, require y similares. Utilice funciones de envoltura para hacer uso de cualquiera de estos constructores como funciones variables.</p>
+
+ <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplo #1 Ejemplo de función variable</h1>
+    <div>
+   <img src="imagenes/imagen30.jpg" width="80%" height="80%" > 
+	   </div>
+   </div>
+  </div>
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplo #2 Ejemplo de método variable</h1>
+    <div>
+     <p>Los métodos de objetos también puede ser llamados con la sintaxis de funciones variables.</p>
+   <img src="imagenes/imagen31.jpg" width="80%" height="80%" >
+	   </div>
+   </div>
+  </div>
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplo #3 Ejemplo de método variable con propiedades estáticas</h1>
+    <div>
+     <p>Cuando se llaman a métodos estáticos, la llamada a la función es más fuerte que el operador de propiedad estática:</p>
+   <img src="imagenes/imagen32.jpg" width="80%" height="80%" >
+	   </div>
+   </div>
+  </div>
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplo #4 Llamables complejos</h1>
+    <div>
+     <p>A partir de PHP 5.4.0, se puede llamar a cualquier callable almacenado en una variable.</p>
+   <img src="imagenes/imagen33.jpg" width="80%" height="80%" >
+	   </div>
+   </div>
+  </div> 
+	   </div>
+   </div>
+  </div>  
+ </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina11" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>MySQL</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   
+    <p> Actualmente el desarrollo de la tecnología informática y computacional produce un gran volumen de datos diariamente. Estos datos necesitan ser ordenados y almacenados para posteriormente poder ser usados o analizados, para esto se crearon grandes almacenes de datos llamados bases de datos. </p>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+      <a href="https://devcode.la/blog" data-role="button">
+        <h2>Más</h2>
+      </a>
+    </li>
+      
+   </ul>
+ </div>
+</div>      
+ </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andrés Méndez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina12" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h2>Datos del desarrollador </h2> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Nombre alumno:</h2>
+    <h4>Catarino Andrés Méndez Maartínez</h4>
+	   <h1>Grupo:</h1>
+    <h4>"F"</h4>
+	   <h2>Semestre:</h2>
+    <h4>Tercer</h4>
+	   <h2>Submodulo:</h2>
+    <h4>DAM(DESARROLLA APLICACIONES MOVILES)</h4>
+	   <h2>Nombre del docente:</h2>
+    <h4>Ing. José Antonio Gomez Hernandez</h4>       
+ </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <h4>Tutorial Daw</h4>
+	  <h4>Catarino Andres Mendez Martínez</h4>
+   <h4>Proyecto Final</h4>
+  </div>
+</div>
+</body>
+</html>
